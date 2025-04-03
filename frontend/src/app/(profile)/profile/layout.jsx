@@ -9,9 +9,7 @@ export const metadata = {
     title: 'پروفایل کاربر ',
     description: 'پروفایل کاربر ',
 }
-export default function rootlayout({ children }) {
-
-
+export default function Rootlayout({ children }) {
 
     return (
         <html lang="fa" dir="rtl">

@@ -10,7 +10,7 @@ export const metadata = {
     description:"فروشگاه پارسا"
     
 }
-export default function rootlayout({ children }) {
+export default function RootLayout({ children }) {
 
 
 
