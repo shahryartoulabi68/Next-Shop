@@ -22,7 +22,7 @@ async function ProductPage({ searchParams }) {
     <>
       <div className="md:flex items-center justify-between mb-4 px-4">
         <h1 className="font-bold text-secondary-800 text-lg mb-8 md:mb-0">صفحه محصولات</h1>
-       <div className="flex-1"> <Search /></div>
+        <div className="flex-1"> <Search /></div>
       </div>
       <div className="grid gap-x-2 grid-cols-12 px-4">
         <div className="col-span-12 flex gap-x-4 w-full md:block md:col-span-3 lg:col-span-2">

@@ -17,10 +17,10 @@ function CartPage() {
         <Link href="/auth" className="font-bold text-lg text-primary-700">ورود به سایت</Link>
     </div>
     if (user.cart?.products && user.cart?.products.length === 0) return <div >
-<div className="">
-<h2 className="text-secondary-800 mb-4">محصولی در سبد خرید شما وجود ندارد !</h2>
-<Link href="/products" className="font-bold text-lg text-primary-700">رفتن به صفحه محصولات؟</Link>
-</div>
+        <div className="">
+            <h2 className="text-secondary-800 mb-4">محصولی در سبد خرید شما وجود ندارد !</h2>
+            <Link href="/products" className="font-bold text-lg text-primary-700">رفتن به صفحه محصولات؟</Link>
+        </div>
         <div className="aspect-video mb-4 relative w-4/5 md:w-3/5 m-auto">
             <Image
                 src={emptyCart}
@@ -36,15 +36,15 @@ function CartPage() {
         </div>
     </div>
     return (
-        <div className="flex  gap-x-8">
-            <div className="w-3/5   no-scrollbar overflow-y-auto">{
+        <div className="flex flex-col md:flex-row px-4  gap-x-8">
+            <div className="w-full md:w-3/5   no-scrollbar overflow-y-auto">{
                 cart?.productDetail.map((item) => {
                     return <CartItem key={item._id} cartItem={item} />
                 })
             }
 
             </div>
-            <div className="w-2/5 max-w-[300px]">
+            <div className="w-full md:w-2/5 md:max-w-[300px]">
                 <CartSummary key={cart._id} cartItem={cart} />
             </div>
 

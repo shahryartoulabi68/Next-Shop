@@ -188,7 +188,8 @@ body {
   user-select: none;
   background-color: rgb(var(--background-app-rgb));
 }
-table{
+
+table {
   background-color: white;
 }
 

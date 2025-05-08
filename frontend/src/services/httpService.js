@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
 const app = axios.create({
-    baseURL:"http://localhost:5000/api",
+    baseURL: "http://localhost:5000/api",
     withCredentials: true
 })
 
@@ -13,7 +13,7 @@ app.interceptors.request.use(
 
 app.interceptors.response.use(
     (res) => res,
-    async (err) => {        
+    async (err) => {
         const originalConfig = err.config
         if (err.response.status === 401 && !originalConfig._retry) {
             originalConfig._retry = true

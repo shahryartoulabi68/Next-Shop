@@ -39,13 +39,13 @@ function CartItem({ cartItem }) {
                     <div>{PersianNumber(cartItem.offPrice * cartItem.quantity)} <span className='text-sm text-secondary-500'>تومان</span></div>
                 </div>
             </div>
-           {!!cartItem.discount && <div className='flex items-center gap-x-2'>
+            {!!cartItem.discount && <div className='flex items-center gap-x-2'>
                 <span className={cartItem.discount ? "line-through opacity-50" : "font-bold"}>{PersianNumber(cartItem.price)}</span>
                 {
                     <span className='bg-red-500  rounded-xl px-2 
                   py-.5 text-secondary-0 text-sm'>{PersianNumber(cartItem.discount)} %</span>}
             </div>}
-            <div className={`${cartItem.discount ? "col-span-1":"col-span-2"} flex  items-center justify-end gap-2 text-error`}>
+            <div className={`${cartItem.discount ? "col-span-1" : "col-span-2"} flex  items-center justify-end gap-2 text-error`}>
                 <button className='border p-1 rounded-md' onClick={() => handlerAddToCart(cartItem._id)}><HiPlus /></button>
                 {
                     cartItem.quantity > 1 ?

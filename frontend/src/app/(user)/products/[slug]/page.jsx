@@ -15,7 +15,7 @@ async function page({ params }) {
 
     return (
         <>
-            <div className='grid grid-cols-5'>
+            <div className='grid grid-cols-5 bg-secondary-0'>
                 <div className="relative aspect-square border-b col-span-5 md:col-span-2 border rounded-lg">
                     <Image
                         src={iphone16}

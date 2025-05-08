@@ -7,8 +7,8 @@ import About from "./_components/about"
 
 export const metadata = {
     title: 'shop',
-    description:"فروشگاه پارسا"
-    
+    description: "فروشگاه پارسا"
+
 }
 export default function RootLayout({ children }) {
 
@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
                     <Header />
                     <div className="container xl:max-w-screen-xl">
                         {children}
-                        <div className=" bg-secondary-200">
-                            <About />
-                        </div>
+                    </div>
+                    <div className=" bg-secondary-200">
+                        <About />
                     </div>
                 </ReactQueryProvider>
             </body>
